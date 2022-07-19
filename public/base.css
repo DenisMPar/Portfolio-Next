@@ -1,0 +1,21 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Titillium Web", sans-serif;
+}
+
+/* .p {
+  background-color: rgba(0, 0, 0, 0.678);
+} */
+
+@media only screen and (max-width: 480px){
+
+  .Toastify__toast {
+   
+    margin: 0 auto;
+    max-width: 200px;
+    margin-top: 10px;
+  }
+}
