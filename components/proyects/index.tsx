@@ -18,7 +18,7 @@ export function Proyects() {
               title={item.proyectTitle}
               subtitle={item.proyectDescription}
               webLink={item.webLink}
-              gitHubLink={item.gitHubLink}
+              gitHubLink={item.gitHubLink ? item.gitHubLink : false}
               key={item.proyectTitle}
             ></InfoGrid>
           );

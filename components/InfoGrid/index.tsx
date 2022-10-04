@@ -53,14 +53,16 @@ function InfoGrid(props: props) {
                   >
                     <Button>Proyecto</Button>
                   </a>
-                  <a
-                    href={props.gitHubLink}
-                    style={{ textDecoration: "none" }}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Button>Código</Button>
-                  </a>
+                  {props.gitHubLink ? (
+                    <a
+                      href={props.gitHubLink}
+                      style={{ textDecoration: "none" }}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Button>Código</Button>
+                    </a>
+                  ) : null}
                 </BtnWrap>
               </>
             ) : null}
