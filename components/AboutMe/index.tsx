@@ -20,14 +20,16 @@ function AboutMe() {
             <TextWrapp>
               <Heading ligthText={true}>Acerca de mi</Heading>
               <Subtitle darkText={false}>
-                Me inicie en el mundo de la programación hace más de un año.
-                Actualmente me encuentro estudiando la carrera de desarrollo web
-                fullstack en apx.school. Soy una persona autodidacta que le
-                gusta aprender y capacitarse para lograr cada vez mejores
-                resultados. Me gusta la tecnología, tanto el software como el
-                hardware y admiro la capacidad que tiene la web para conectarnos
-                y mejorar la vida de las personas día a día, por esta razón,
-                decidí convertirme en programador.
+                Programador fullstack con experiencia en desarrollo web. He
+                trabajado en diversos proyectos, adquiriendo habilidades tanto
+                en el desarrollo frontend como en el backend. Disfruto de la
+                creación de interfaces atractivas y la implementación de
+                soluciones eficientes. Siempre estoy abierto a nuevos desafíos y
+                en constante aprendizaje para mejorar mis habilidades. <br />
+                Si tu objetivo es contratar un desarrollador versátil, que se
+                destaque por su pasión a la hora de desarrolllar interfaces y
+                que a su vez pueda colaborar en el desarrollo de APIs, soy la
+                persona que buscas.
               </Subtitle>
             </TextWrapp>
           </Column1>
