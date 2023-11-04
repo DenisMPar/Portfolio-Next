@@ -26,7 +26,7 @@ export async function getStaticProps() {
 type Props = {
   fallback: any;
 };
-
+//coment para probar nueva conexion a git
 const Home: NextPage<Props> = ({ fallback }) => {
   return (
     <SWRConfig value={{ fallback }}>
