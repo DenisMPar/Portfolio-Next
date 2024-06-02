@@ -35,7 +35,7 @@ export const SocialMediaWrapp = styled.div`
 `;
 
 export const Img = styled(Image)`
-  width: 100%;
+  width: 85%;
   height: 100%;
 `;
 

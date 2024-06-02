@@ -61,7 +61,7 @@ export const Heading = styled.p<headingProps>`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 700;
-  color: ${({ ligthText }) => (ligthText ? "#FF6136" : "010606")};
+  color: ${({ ligthText }) => (ligthText ? "#F54A1A" : "010606")};
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }

@@ -12,6 +12,8 @@ import {
   TechsWrap,
   TechsSpan,
   Img,
+  TitleWrapp,
+  ProyectTypeSpan,
 } from "./infoGridElements";
 import { Button } from "../../ui/button";
 import Tilt from "react-parallax-tilt";
@@ -24,6 +26,7 @@ type props = {
   webLink?: string;
   gitHubLink?: string;
   techs: object;
+  proyectType: string;
 };
 
 function InfoGrid(props: props) {
@@ -34,6 +37,16 @@ function InfoGrid(props: props) {
           <Column1>
             <TextWrapp>
               <Heading ligthText={true}>{props.title}</Heading>
+              <ProyectTypeSpan
+                style={{
+                  backgroundColor: `${
+                    props.proyectType == "Profesional" ? "#c26332" : "#404949"
+                  }`,
+                }}
+              >
+                {props.proyectType}
+              </ProyectTypeSpan>
+
               <Subtitle darkText={false}>{props.subtitle}</Subtitle>
             </TextWrapp>
             {props.type == "proyect" ? (

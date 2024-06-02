@@ -60,6 +60,7 @@ export function useGetProyectsData() {
       proyectDescription: getCmsDescription(
         proyect.proyectDescription.content[0]
       ),
+      proyectType: proyect.proyectType,
     };
   });
   return formatedProyects;

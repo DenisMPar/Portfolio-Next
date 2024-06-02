@@ -8,7 +8,7 @@ export const ProyectsContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #d93425;
+  background-color: #23292d;
   gap: 60px;
   @media screen and (max-width: 769px) {
     padding: 80px 40px 40px 40px;
@@ -36,7 +36,7 @@ export const ProyectWrapper = styled.div`
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  background-color: #d93425;
+  background-color: #23292d;
   grid-gap: 15px;
   border-radius: 4px;
   padding: 0;

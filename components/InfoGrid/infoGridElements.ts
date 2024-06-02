@@ -48,6 +48,11 @@ export const TextWrapp = styled.div`
   max-width: 540px;
   padding: 0;
 `;
+export const TitleWrapp = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
 
 type headingProps = {
   ligthText: any;
@@ -58,7 +63,7 @@ export const Heading = styled.p<headingProps>`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 700;
-  color: ${({ ligthText }) => (ligthText ? "#FF6136" : "010606")};
+  color: ${({ ligthText }) => (ligthText ? "#F54A1A" : "010606")};
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }
@@ -91,12 +96,16 @@ export const TechsWrap = styled.div`
 `;
 export const TechsSpan = styled.div`
   font-size: 0.85rem;
-  background-color: #d93425;
+  background-color: #bf200f;
   border-radius: 10px;
-  padding: 4px;
-  &:hover {
-    padding: 4px 6px;
-  }
+  padding: 2px 5px;
+`;
+export const ProyectTypeSpan = styled.div`
+  width: fit-content;
+  font-size: 0.85rem;
+  border-radius: 10px;
+  padding: 2px 5px;
+  margin-bottom: 5px;
 `;
 
 export const BtnWrap = styled.div`

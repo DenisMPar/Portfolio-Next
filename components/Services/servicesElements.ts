@@ -23,7 +23,7 @@ export const ServicesTitle = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 700;
-  color: #e83325;
+  color: #f54a1a;
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }

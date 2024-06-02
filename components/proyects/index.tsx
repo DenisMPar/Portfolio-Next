@@ -20,6 +20,7 @@ export function Proyects() {
               webLink={item.webLink}
               gitHubLink={item.gitHubLink ? item.gitHubLink : false}
               key={item.proyectTitle}
+              proyectType={item.proyectType}
             ></InfoGrid>
           );
         })}
