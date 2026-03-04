@@ -10,6 +10,22 @@
   background-color: rgba(0, 0, 0, 0.678);
 } */
 
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  padding: 8px 16px;
+  background: #00825b;
+  color: #fff;
+  font-size: 1rem;
+  z-index: 9999;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 @media only screen and (max-width: 480px){
 
   .Toastify__toast {

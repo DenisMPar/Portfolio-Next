@@ -33,12 +33,12 @@ export const ContactRow = styled.div`
 `;
 export const Column1 = styled.div`
   margin-bottom: 15px;
-  padding: 015px;
+  padding: 0 15px;
   grid-area: col1;
 `;
 export const Column2 = styled.div`
   margin-bottom: 15px;
-  padding: 015px;
+  padding: 0 15px;
   grid-area: col2;
 `;
 
@@ -46,13 +46,13 @@ export const FormWrapp = styled.div`
   max-width: 540px;
   padding: 0;
 `;
-export const ContactTitle = styled.h1`
+export const ContactTitle = styled.h2`
   margin-top: 20px;
   margin-bottom: 16px;
   font-size: 48px;
   line-height: 1.1;
   font-weight: 700;
-  color: "#FF6136";
+  color: #FF6136;
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }

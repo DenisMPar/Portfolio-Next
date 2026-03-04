@@ -1,4 +1,4 @@
-import Image from "next/future/image";
+import Image from "next/image";
 import styled from "styled-components";
 
 export const InfoGridCont = styled.div`
@@ -35,12 +35,12 @@ export const InfoGridRow = styled.div`
 
 export const Column1 = styled.div`
   margin-bottom: 15px;
-  padding: 015px;
+  padding: 0 15px;
   grid-area: col1;
 `;
 export const Column2 = styled.div`
   margin-bottom: 15px;
-  padding: 015px;
+  padding: 0 15px;
   grid-area: col2;
 `;
 
@@ -58,12 +58,12 @@ type headingProps = {
   ligthText: any;
 };
 
-export const Heading = styled.p<headingProps>`
+export const Heading = styled.h2<headingProps>`
   margin-bottom: 16px;
   font-size: 48px;
   line-height: 1.1;
   font-weight: 700;
-  color: ${({ ligthText }) => (ligthText ? "#F54A1A" : "010606")};
+  color: ${({ ligthText }) => (ligthText ? "#F54A1A" : "#010606")};
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }
@@ -74,7 +74,7 @@ type subtitleProps = {
 };
 
 export const Subtitle = styled.p<subtitleProps>`
-  max-width: width 440px;
+  max-width: 440px;
   font-size: 18px;
   line-height: 23px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};

@@ -20,6 +20,11 @@ export const TextInput = styled.input`
   height: 40px;
   font-size: 1.2rem;
   padding: 5px;
+
+  &:focus-visible {
+    outline: 2px solid #00825b;
+    outline-offset: 2px;
+  }
 `;
 export const TextArea = styled.textarea`
   border: 3px solid #2c2c2c;
@@ -29,4 +34,9 @@ export const TextArea = styled.textarea`
   font-size: 1.2rem;
   padding: 5px;
   resize: none;
+
+  &:focus-visible {
+    outline: 2px solid #00825b;
+    outline-offset: 2px;
+  }
 `;

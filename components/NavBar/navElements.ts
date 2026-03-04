@@ -14,7 +14,7 @@ export const Nav = styled.nav`
   z-index: 10;
 
   @media screen and (max-width: 960px) {
-    transition: 0.8s all ease;
+    transition: background-color 0.8s ease;
   }
 `;
 
@@ -77,6 +77,11 @@ export const NavLinks = styled(LinkScroll)`
 
   &:hover {
     color: #f54a1a;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #f54a1a;
+    outline-offset: -2px;
   }
 
   &.active {
