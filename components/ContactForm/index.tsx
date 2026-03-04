@@ -16,7 +16,7 @@ function ContactForm() {
     });
     contactFormRef?.current?.reset();
   }
-  if (state.errors.length > 0 && !state.submitting) {
+  if (state.errors?.getFormErrors().length > 0 && !state.submitting) {
     toast.error("algo salio mal", {
       hideProgressBar: true,
       position: "bottom-center",
@@ -27,7 +27,7 @@ function ContactForm() {
     <MyForm onSubmit={handleMail} ref={contactFormRef}>
       <TextLabel htmlFor="name">
         Nombre
-        <TextInput id="name" name="name" required={true}></TextInput>
+        <TextInput id="name" name="name" required={true} autoComplete="name"></TextInput>
       </TextLabel>
       <TextLabel htmlFor="email">
         Email
@@ -36,6 +36,8 @@ function ContactForm() {
           type="email"
           name="email"
           required={true}
+          autoComplete="email"
+          spellCheck={false}
         ></TextInput>
         <ValidationError
           style={{ color: "red" }}
@@ -44,7 +46,7 @@ function ContactForm() {
           errors={state.errors}
         ></ValidationError>
       </TextLabel>
-      <TextLabel>
+      <TextLabel htmlFor="message">
         Mensaje
         <TextArea id="message" name="message" required={true}></TextArea>
       </TextLabel>

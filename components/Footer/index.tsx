@@ -30,7 +30,6 @@ export function Footer() {
           }}
         >
           GitHub
-          <span style={{ display: "none" }}>Github</span>
           <GithubLogo></GithubLogo>
         </a>
         <a
@@ -89,8 +88,8 @@ export function Footer() {
         </a>
       </SocialMediaWrapp>
       <ContainerCopy>
-        <BiCopyright />
-        2022 Denis
+        <BiCopyright aria-hidden="true" />
+        2026 Denis
       </ContainerCopy>
     </MyFooter>
   );

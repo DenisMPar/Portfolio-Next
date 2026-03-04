@@ -37,7 +37,7 @@ export const HeroBackGround = styled(animated.div)`
   height: 100%;
   overflow: hidden;
 `;
-export const VideoBackGround = styled.video`
+export const VideoBackGround = styled.video.attrs({ playsInline: true })`
   width: 100%;
   height: 100%;
   object-fit: cover;

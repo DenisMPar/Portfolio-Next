@@ -10,6 +10,7 @@ export async function getCmsContent() {
 
     return data;
   } catch (error) {
-    return error;
+    console.error("Failed to fetch CMS content:", error);
+    return [];
   }
 }

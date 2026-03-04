@@ -9,19 +9,23 @@ import {
 } from "./heroElements";
 
 function Hero() {
+  const prefersReducedMotion =
+    typeof window !== "undefined" &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
   const styled = useSpring({
     to: { opacity: 1 },
-    from: { opacity: 0 },
-    delay: 300,
+    from: { opacity: prefersReducedMotion ? 1 : 0 },
+    delay: prefersReducedMotion ? 0 : 300,
     config: {
-      duration: 1500,
+      duration: prefersReducedMotion ? 0 : 1500,
     },
   });
   return (
     <HeroContainer id="hero">
       <HeroBackGround style={styled}>
         <VideoBackGround
-          autoPlay
+          autoPlay={!prefersReducedMotion}
           loop
           muted
           src={

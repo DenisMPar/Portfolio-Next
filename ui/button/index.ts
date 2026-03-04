@@ -6,16 +6,19 @@ export const Button = styled.button`
   padding: 12px 30px;
   color: #fff;
   font-size: 16px;
-  outline: none;
   border: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.2 ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+
+  &:focus-visible {
+    outline: 2px solid #00825b;
+    outline-offset: 2px;
+  }
 
   &:hover {
-    transition: all 0.2 ease-in-out;
     background: #02d998;
   }
 `;
