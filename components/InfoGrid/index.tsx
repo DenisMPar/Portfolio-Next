@@ -16,7 +16,6 @@ import {
   ProyectTypeSpan,
 } from "./infoGridElements";
 import { Button } from "../../ui/button";
-import Tilt from "react-parallax-tilt";
 
 type props = {
   type: "info" | "proyect";
@@ -34,6 +33,16 @@ function InfoGrid(props: props) {
     <InfoGridCont>
       <InfoGridWrapp>
         <InfoGridRow>
+          <Column2>
+            <ImgWrap>
+              <Img
+                layout="fill"
+                objectFit="cover"
+                alt={"icon of " + props.title}
+                src={"https:" + props.img}
+              />
+            </ImgWrap>
+          </Column2>
           <Column1>
             <TextWrapp>
               <Heading ligthText={true}>{props.title}</Heading>
@@ -46,13 +55,11 @@ function InfoGrid(props: props) {
               >
                 {props.proyectType}
               </ProyectTypeSpan>
-
               <Subtitle darkText={false}>{props.subtitle}</Subtitle>
             </TextWrapp>
             {props.type == "proyect" ? (
               <>
                 <TechsWrap>
-                  Tecnologías:
                   {Object.entries(props.techs).map((item) => {
                     return <TechsSpan key={item[1]}>{item[1]}</TechsSpan>;
                   })}
@@ -80,18 +87,6 @@ function InfoGrid(props: props) {
               </>
             ) : null}
           </Column1>
-          <Column2>
-            <Tilt>
-              <ImgWrap>
-                <Img
-                  width={500}
-                  height={400}
-                  alt={"icon of " + props.title}
-                  src={"https:" + props.img}
-                />
-              </ImgWrap>
-            </Tilt>
-          </Column2>
         </InfoGridRow>
       </InfoGridWrapp>
     </InfoGridCont>

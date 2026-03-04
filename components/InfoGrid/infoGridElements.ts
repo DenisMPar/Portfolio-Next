@@ -4,50 +4,52 @@ import styled from "styled-components";
 export const InfoGridCont = styled.div`
   position: relative;
   color: #fff;
-  border-radius: 4px;
-  padding: 15px;
-  background: #1f1f1f;
-`;
+  border-radius: 12px;
+  background: #1f2529;
+  border: 1px solid #2e3538;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 
-export const InfoGridWrapp = styled.div`
-  display: grid;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 24px;
-  justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
-`;
-
-export const InfoGridRow = styled.div`
-  display: grid;
-  grid-auto-columns: minmax(auto, 1fr);
-  align-items: center;
-  grid-template-areas: "col2 col1";
-
-  @media screen and (max-width: 768px) {
-    grid-template-areas: "col1" "col2";
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+    border-color: #f54a1a;
   }
 `;
 
+export const InfoGridWrapp = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`;
+
+export const InfoGridRow = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`;
+
 export const Column1 = styled.div`
-  margin-bottom: 15px;
-  padding: 0 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   grid-area: col1;
 `;
+
 export const Column2 = styled.div`
-  margin-bottom: 15px;
-  padding: 0 15px;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
   grid-area: col2;
 `;
 
 export const TextWrapp = styled.div`
-  max-width: 540px;
-  padding: 0;
+  margin-bottom: 12px;
 `;
+
 export const TitleWrapp = styled.div`
   display: flex;
   align-items: center;
@@ -59,13 +61,14 @@ type headingProps = {
 };
 
 export const Heading = styled.h2<headingProps>`
-  margin-bottom: 16px;
-  font-size: 48px;
-  line-height: 1.1;
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: 1.2;
   font-weight: 700;
-  color: ${({ ligthText }) => (ligthText ? "#F54A1A" : "#010606")};
+  color: ${({ ligthText }) => (ligthText ? "#f54a1a" : "#010606")};
+
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 20px;
   }
 `;
 
@@ -74,55 +77,50 @@ type subtitleProps = {
 };
 
 export const Subtitle = styled.p<subtitleProps>`
-  max-width: 440px;
-  font-size: 18px;
-  line-height: 23px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
-  @media screen and (max-width: 769px) {
-    font-size: 16px;
-  }
-  @media screen and (max-width: 480px) {
-    font-size: 14px;
-  }
+  font-size: 14px;
+  line-height: 1.6;
+  color: ${({ darkText }) => (darkText ? "#010606" : "#b0b8bc")};
 `;
 
 export const TechsWrap = styled.div`
-  margin-top: 5px;
+  margin-top: 12px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 6px;
 `;
+
 export const TechsSpan = styled.div`
-  font-size: 0.85rem;
-  background-color: #bf200f;
-  border-radius: 10px;
-  padding: 2px 5px;
+  font-size: 0.75rem;
+  background-color: #2a3135;
+  border: 1px solid #3a4549;
+  color: #b0b8bc;
+  border-radius: 6px;
+  padding: 3px 8px;
 `;
+
 export const ProyectTypeSpan = styled.div`
   width: fit-content;
-  font-size: 0.85rem;
-  border-radius: 10px;
-  padding: 2px 5px;
-  margin-bottom: 5px;
+  font-size: 0.75rem;
+  border-radius: 6px;
+  padding: 3px 8px;
+  margin-bottom: 8px;
 `;
 
 export const BtnWrap = styled.div`
-  margin-top: 15px;
+  margin-top: auto;
+  padding-top: 16px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 20px;
+  gap: 12px;
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 555px;
+  position: relative;
+  width: 100%;
   height: 100%;
 `;
+
 export const Img = styled(Image)`
-  height: 100%;
-  width: 100%;
-  margin: 0 0 10px 0;
-  padding: 0;
+  object-fit: cover;
 `;
