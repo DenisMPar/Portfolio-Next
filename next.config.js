@@ -10,14 +10,8 @@ const nextConfig = {
 };
 
 module.exports = withSvgr({
-  // your config for other plugins or the general next.js here...
-  nextConfig,
+  ...nextConfig,
   images: {
     domains: [`res.cloudinary.com`, "images.ctfassets.net"],
-  },
-  experimental: {
-    images: {
-      allowFutureImage: true,
-    },
   },
 });

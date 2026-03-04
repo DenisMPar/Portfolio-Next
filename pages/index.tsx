@@ -34,7 +34,7 @@ const Home: NextPage<Props> = ({ fallback }) => {
         <link rel="icon" href="/favicon.png" />
         <title>Porfolio Denis</title>
       </Head>
-      <div>
+      <div id="main">
         <Header />
         <ToastContainer autoClose={false} />
         <Hero />
