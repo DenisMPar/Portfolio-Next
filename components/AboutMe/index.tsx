@@ -18,18 +18,21 @@ function AboutMe() {
         <AboutMeRow>
           <Column1>
             <TextWrapp>
-              <Heading ligthText={true}>Acerca de mi</Heading>
+              <Heading ligthText={true}>About Me</Heading>
               <Subtitle darkText={false}>
-                Programador fullstack con experiencia en desarrollo web. He
-                trabajado en diversos proyectos, adquiriendo habilidades tanto
-                en el desarrollo frontend como en el backend. Disfruto de la
-                creación de interfaces atractivas y la implementación de
-                soluciones eficientes. Siempre estoy abierto a nuevos desafíos y
-                en constante aprendizaje para mejorar mis habilidades. <br />
-                Si tu objetivo es contratar un desarrollador versátil, que se
-                destaque por su pasión a la hora de desarrolllar interfaces y
-                que a su vez pueda colaborar en el desarrollo de APIs, soy la
-                persona que buscas.
+                Hi! My name is Denis, and I{"'"}m a Frontend Developer.
+                <br /><br />
+                I enjoy building products that deliver outstanding user
+                experiences and stand out visually.
+                Over the past three years, I{"'"}ve worked closely with design
+                teams — building projects from scratch and
+                continuously improving existing systems. My focus: implementing interfaces,
+                optimizing user flows, creating reusable components, and solving
+                usability problems.
+                <br /><br />
+                Along the way, I{"'"}ve strengthened skills like collaborative
+                teamwork, adaptability to different technologies, and the ability
+                to turn complex requirements into clear, functional solutions.
               </Subtitle>
             </TextWrapp>
           </Column1>
