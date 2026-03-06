@@ -7,7 +7,7 @@ export function Proyects() {
 
   return (
     <ProyectsContainer id="proyects">
-      <ProyectsTitle>Proyectos</ProyectsTitle>
+      <ProyectsTitle>Projects</ProyectsTitle>
       <ProyectWrapper>
         {data.map((item) => {
           return (

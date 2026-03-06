@@ -11,7 +11,7 @@ function Services() {
 
   return (
     <ServicesContainer id="technologies">
-      <ServicesTitle>Mis Tecnologías</ServicesTitle>
+      <ServicesTitle>My Technologies</ServicesTitle>
       <CardsWrapper>
         {services.map((service) => (
           <ServicesCard

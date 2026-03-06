@@ -27,7 +27,7 @@ export default class MyDocument extends Document {
   }
   render() {
     return (
-      <Html lang="es">
+      <Html lang="en">
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
@@ -43,13 +43,13 @@ export default class MyDocument extends Document {
 
           <meta
             name="description"
-            content="Aqui podras ver informacion sobre mi, mis proyectos, tecnologías aprendidas y contactarme si gustas"
+            content="Here you can find information about me, my projects, technologies I've learned, and get in touch"
           />
-          <meta name="theme-color" content="#010606" />
+          <meta name="theme-color" content="#0a0a0d" />
         </Head>
         <body>
           <a href="#main" className="skip-link">
-            Saltar al contenido principal
+            Skip to main content
           </a>
           <Main />
           <NextScript />

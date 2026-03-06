@@ -32,7 +32,7 @@ const Home: NextPage<Props> = ({ fallback }) => {
     <SWRConfig value={{ fallback }}>
       <Head>
         <link rel="icon" href="/favicon.png" />
-        <title>Porfolio Denis</title>
+        <title>Denis Portfolio</title>
       </Head>
       <div id="main">
         <Header />

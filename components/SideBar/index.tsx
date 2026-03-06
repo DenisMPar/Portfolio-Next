@@ -38,7 +38,7 @@ export const SideBar = (props: props) => {
                   duration={500}
                   spy={true}
                 >
-                  Acerca de mi
+                  About Me
                 </SidebarLink>
                 <SidebarLink
                   href="#proyects"
@@ -48,7 +48,7 @@ export const SideBar = (props: props) => {
                   duration={500}
                   spy={true}
                 >
-                  Proyectos
+                  Projects
                 </SidebarLink>
                 <SidebarLink
                   href="#technologies"
@@ -58,7 +58,7 @@ export const SideBar = (props: props) => {
                   duration={500}
                   spy={true}
                 >
-                  Tecnologías
+                  Technologies
                 </SidebarLink>
                 <SidebarLink
                   href="#contact"
@@ -68,7 +68,7 @@ export const SideBar = (props: props) => {
                   duration={500}
                   spy={true}
                 >
-                  Contacto
+                  Contact
                 </SidebarLink>
               </SideBarMenu>
             </SideBarMenuWrap>

@@ -1,4 +1,5 @@
 import {
+  ContactSection,
   ContactContainer,
   ContactTitle,
   FormWrapp,
@@ -12,11 +13,12 @@ import { ContactForm } from "../ContactForm";
 
 function Contact() {
   return (
-    <ContactContainer id="contact">
+    <ContactSection id="contact">
+    <ContactContainer>
       <ContactRow>
         <Column1>
           <FormWrapp>
-            <ContactTitle>Contacto</ContactTitle>
+            <ContactTitle>Contact</ContactTitle>
             <ContactForm></ContactForm>
           </FormWrapp>
         </Column1>
@@ -27,6 +29,7 @@ function Contact() {
         </Column2>
       </ContactRow>
     </ContactContainer>
+    </ContactSection>
   );
 }
 

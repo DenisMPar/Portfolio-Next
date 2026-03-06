@@ -14,7 +14,7 @@ export function Footer() {
   return (
     <MyFooter>
       <SocialMediaWrapp>
-        <FooterTitle>Mis Redes</FooterTitle>
+        <FooterTitle>My Social Media</FooterTitle>
       </SocialMediaWrapp>
       <SocialMediaWrapp>
         <a
@@ -65,7 +65,7 @@ export function Footer() {
         <a
           rel="noreferrer"
           target="_blank"
-          href="https://apx.school/profile/3c628fea-56a7-4752-ae6c-caada303fe28"
+          href="https://apx.school/profiles/3c628fea-56a7-4752-ae6c-caada303fe28/sd"
           style={{
             display: "flex",
             flexDirection: "column",

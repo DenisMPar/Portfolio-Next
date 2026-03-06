@@ -37,7 +37,7 @@ export function NavBar(props: props) {
               duration={500}
               spy={true}
             >
-              Acerca de Mi
+              About Me
             </NavLinks>
           </NavItem>
           <NavItem>
@@ -49,7 +49,7 @@ export function NavBar(props: props) {
               spy={true}
               activeClass={"active"}
             >
-              Proyectos
+              Projects
             </NavLinks>
           </NavItem>
           <NavItem>
@@ -60,7 +60,7 @@ export function NavBar(props: props) {
               duration={500}
               spy={true}
             >
-              Tecnologías
+              Technologies
             </NavLinks>
           </NavItem>
           <NavItem>
@@ -71,7 +71,7 @@ export function NavBar(props: props) {
               duration={500}
               spy={true}
             >
-              Contacto
+              Contact
             </NavLinks>
           </NavItem>
         </NavMenu>
