@@ -1,11 +1,12 @@
 import Image from "next/image";
+import { HTMLAttributes } from "react";
 import styled from "styled-components";
 
 export const InfoGridCont = styled.div`
   position: relative;
   color: #fff;
   border-radius: 12px;
-  background: #1f2529;
+  background: #1d1e26;
   border: 1px solid #2e3538;
   overflow: hidden;
   display: flex;
@@ -15,7 +16,7 @@ export const InfoGridCont = styled.div`
   &:hover {
     transform: translateY(-4px);
     box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
-    border-color: #f54a1a;
+    border-color: #f5f0eb;
   }
 `;
 
@@ -56,7 +57,7 @@ export const TitleWrapp = styled.div`
   justify-content: space-between;
 `;
 
-type headingProps = {
+type headingProps = HTMLAttributes<HTMLHeadingElement> & {
   ligthText: any;
 };
 
@@ -65,21 +66,21 @@ export const Heading = styled.h2<headingProps>`
   font-size: 24px;
   line-height: 1.2;
   font-weight: 700;
-  color: ${({ ligthText }) => (ligthText ? "#f54a1a" : "#010606")};
+  color: ${({ ligthText }) => (ligthText ? "#f5f0eb" : "#010606")};
 
   @media screen and (max-width: 480px) {
     font-size: 20px;
   }
 `;
 
-type subtitleProps = {
+type subtitleProps = HTMLAttributes<HTMLParagraphElement> & {
   darkText: any;
 };
 
 export const Subtitle = styled.p<subtitleProps>`
   font-size: 14px;
   line-height: 1.6;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#b0b8bc")};
+  color: ${({ darkText }) => (darkText ? "#010606" : "#9a9490")};
 `;
 
 export const TechsWrap = styled.div`
@@ -90,7 +91,7 @@ export const TechsWrap = styled.div`
   gap: 6px;
 `;
 
-export const TechsSpan = styled.div`
+export const TechsSpan = styled.div<HTMLAttributes<HTMLDivElement>>`
   font-size: 0.75rem;
   background-color: #2a3135;
   border: 1px solid #3a4549;
@@ -99,12 +100,17 @@ export const TechsSpan = styled.div`
   padding: 3px 8px;
 `;
 
-export const ProyectTypeSpan = styled.div`
+type proyectTypeProps = HTMLAttributes<HTMLDivElement> & {
+  bgColor?: string;
+};
+
+export const ProyectTypeSpan = styled.div<proyectTypeProps>`
   width: fit-content;
   font-size: 0.75rem;
   border-radius: 6px;
   padding: 3px 8px;
   margin-bottom: 8px;
+  background-color: ${({ bgColor }) => bgColor || "transparent"};
 `;
 
 export const BtnWrap = styled.div`

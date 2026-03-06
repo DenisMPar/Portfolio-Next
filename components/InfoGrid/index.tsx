@@ -47,11 +47,7 @@ function InfoGrid(props: props) {
             <TextWrapp>
               <Heading ligthText={true}>{props.title}</Heading>
               <ProyectTypeSpan
-                style={{
-                  backgroundColor: `${
-                    props.proyectType == "Profesional" ? "#c26332" : "#404949"
-                  }`,
-                }}
+                bgColor={props.proyectType == "Profesional" ? "#00825b" : "#404949"}
               >
                 {props.proyectType}
               </ProyectTypeSpan>
@@ -71,7 +67,7 @@ function InfoGrid(props: props) {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <Button>Proyecto</Button>
+                    <Button>Project</Button>
                   </a>
                   {props.gitHubLink ? (
                     <a
@@ -80,7 +76,7 @@ function InfoGrid(props: props) {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <Button>Código</Button>
+                      <Button>Code</Button>
                     </a>
                   ) : null}
                 </BtnWrap>
