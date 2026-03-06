@@ -16,7 +16,7 @@ function ContactForm() {
     });
     contactFormRef?.current?.reset();
   }
-  if (state.errors && state.errors.length > 0 && !state.submitting) {
+  if (state.errors && state.errors.getFormErrors().length > 0 && !state.submitting) {
     toast.error("something went wrong", {
       hideProgressBar: true,
       position: "bottom-center",
