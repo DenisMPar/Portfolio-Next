@@ -13,5 +13,11 @@ module.exports = withSvgr({
   ...nextConfig,
   images: {
     domains: [`res.cloudinary.com`, "images.ctfassets.net"],
+    allowFutureImage: true,
+  },
+  experimental: {
+    images: {
+      allowFutureImage: true,
+    },
   },
 });

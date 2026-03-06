@@ -25,6 +25,7 @@ function Hero() {
     <HeroContainer id="hero">
       <HeroBackGround style={styled}>
         <VideoBackGround
+          playsInline
           autoPlay={!prefersReducedMotion}
           loop
           muted
@@ -35,7 +36,7 @@ function Hero() {
       </HeroBackGround>
       <HeroContent>
         <HeroTitle>Denis Parada</HeroTitle>
-        <HeroP>Desarrollador Web Fullstack </HeroP>
+        <HeroP>Frontend Developer</HeroP>
       </HeroContent>
     </HeroContainer>
   );

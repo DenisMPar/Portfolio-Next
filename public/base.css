@@ -6,6 +6,10 @@
   font-family: "Titillium Web", sans-serif;
 }
 
+body {
+  background-color: #0a0a0d;
+}
+
 /* .p {
   background-color: rgba(0, 0, 0, 0.678);
 } */

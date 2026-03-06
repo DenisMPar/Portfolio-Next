@@ -10,14 +10,14 @@ function ContactForm() {
   const contactFormRef: MutableRefObject<any> = useRef(null);
 
   if (state.succeeded && !state.submitting) {
-    toast.success("mensaje enviado", {
+    toast.success("message sent", {
       hideProgressBar: true,
       position: "bottom-center",
     });
     contactFormRef?.current?.reset();
   }
-  if (state.errors?.getFormErrors().length > 0 && !state.submitting) {
-    toast.error("algo salio mal", {
+  if (state.errors && state.errors.length > 0 && !state.submitting) {
+    toast.error("something went wrong", {
       hideProgressBar: true,
       position: "bottom-center",
     });
@@ -26,7 +26,7 @@ function ContactForm() {
   return (
     <MyForm onSubmit={handleMail} ref={contactFormRef}>
       <TextLabel htmlFor="name">
-        Nombre
+        Name
         <TextInput id="name" name="name" required={true} autoComplete="name"></TextInput>
       </TextLabel>
       <TextLabel htmlFor="email">
@@ -47,11 +47,11 @@ function ContactForm() {
         ></ValidationError>
       </TextLabel>
       <TextLabel htmlFor="message">
-        Mensaje
+        Message
         <TextArea id="message" name="message" required={true}></TextArea>
       </TextLabel>
       <Button type="submit" disabled={state.submitting}>
-        {state.submitting ? <LoaderComp></LoaderComp> : "Enviar"}
+        {state.submitting ? <LoaderComp></LoaderComp> : "Send"}
       </Button>
     </MyForm>
   );
