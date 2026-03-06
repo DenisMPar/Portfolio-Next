@@ -1,7 +1,8 @@
+import { HTMLAttributes, VideoHTMLAttributes } from "react";
 import styled from "styled-components";
 import { animated } from "react-spring";
 
-export const HeroContainer = styled.div`
+export const HeroContainer = styled.div<HTMLAttributes<HTMLDivElement>>`
   background: #0c0c0c;
   display: flex;
   justify-content: center;
@@ -37,14 +38,14 @@ export const HeroBackGround = styled(animated.div)`
   height: 100%;
   overflow: hidden;
 `;
-export const VideoBackGround = styled.video.attrs({ playsInline: true })`
+export const VideoBackGround = styled.video<VideoHTMLAttributes<HTMLVideoElement>>`
   width: 100%;
   height: 100%;
   object-fit: cover;
   background: #232a34;
 `;
 
-export const HeroContent = styled.div`
+export const HeroContent = styled.div<HTMLAttributes<HTMLDivElement>>`
   z-index: 3;
   max-width: 1200px;
   padding: 80px;
@@ -53,7 +54,7 @@ export const HeroContent = styled.div`
   align-items: center;
 `;
 
-export const HeroTitle = styled.h1`
+export const HeroTitle = styled.h1<HTMLAttributes<HTMLHeadingElement>>`
   color: white;
   font-size: 80px;
   text-align: center;
@@ -66,7 +67,7 @@ export const HeroTitle = styled.h1`
   }
 `;
 
-export const HeroP = styled.p`
+export const HeroP = styled.p<HTMLAttributes<HTMLParagraphElement>>`
   margin-top: 18px;
   color: white;
   font-size: 24px;

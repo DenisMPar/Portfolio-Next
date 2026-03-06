@@ -1,7 +1,13 @@
+import { HTMLAttributes } from "react";
 import styled from "styled-components";
 import { ContactIcon } from "ui/icons";
 
-export const ContactContainer = styled.div`
+export const ContactSection = styled.section<HTMLAttributes<HTMLElement>>`
+  background-color: #17171d;
+  width: 100%;
+`;
+
+export const ContactContainer = styled.div<HTMLAttributes<HTMLDivElement>>`
   display: grid;
   z-index: 1;
   min-height: 100vh;
@@ -20,7 +26,7 @@ export const ContactContainer = styled.div`
   }
 `;
 
-export const ContactRow = styled.div`
+export const ContactRow = styled.div<HTMLAttributes<HTMLDivElement>>`
   height: 100%;
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
@@ -31,28 +37,28 @@ export const ContactRow = styled.div`
     grid-template-areas: "col1" "col2";
   }
 `;
-export const Column1 = styled.div`
+export const Column1 = styled.div<HTMLAttributes<HTMLDivElement>>`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col1;
 `;
-export const Column2 = styled.div`
+export const Column2 = styled.div<HTMLAttributes<HTMLDivElement>>`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
 `;
 
-export const FormWrapp = styled.div`
+export const FormWrapp = styled.div<HTMLAttributes<HTMLDivElement>>`
   max-width: 540px;
   padding: 0;
 `;
-export const ContactTitle = styled.h2`
+export const ContactTitle = styled.h2<HTMLAttributes<HTMLHeadingElement>>`
   margin-top: 20px;
   margin-bottom: 16px;
   font-size: 48px;
   line-height: 1.1;
   font-weight: 700;
-  color: #FF6136;
+  color: #f5f0eb;
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }
@@ -67,4 +73,5 @@ export const Img = styled(ContactIcon)`
   width: 100%;
   margin: 0 0 10px 0;
   padding: 0;
+  filter: brightness(1.8);
 `;

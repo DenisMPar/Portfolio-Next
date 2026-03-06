@@ -1,3 +1,4 @@
+import { HTMLAttributes } from "react";
 import styled from "styled-components";
 import { Link as LinkScroll } from "react-scroll";
 import { FaTimes } from "react-icons/fa";
@@ -17,7 +18,7 @@ export const SideBarContainer = styled(animated.aside)`
 export const CloseIcon = styled(FaTimes)`
   color: #fff;
 `;
-export const Icon = styled.div`
+export const Icon = styled.div<HTMLAttributes<HTMLDivElement>>`
   position: absolute;
   top: 1.2rem;
   right: 1.5rem;
@@ -40,15 +41,15 @@ export const SidebarLink = styled(LinkScroll)`
   cursor: pointer;
 
   &:hover {
-    color: red;
+    color: #f5f0eb;
     transition: 0.2 ease-in-out;
   }
 `;
-export const SideBarMenuWrap = styled.div`
+export const SideBarMenuWrap = styled.div<HTMLAttributes<HTMLDivElement>>`
   color: #fff;
 `;
 
-export const SideBarMenu = styled.ul`
+export const SideBarMenu = styled.ul<HTMLAttributes<HTMLUListElement>>`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 110px);

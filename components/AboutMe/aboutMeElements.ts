@@ -1,12 +1,13 @@
+import { HTMLAttributes } from "react";
 import styled from "styled-components";
 import { AboutMeIcon } from "ui/icons";
 
-type containerProps = {
+type containerProps = HTMLAttributes<HTMLDivElement> & {
   lightBack: any;
 };
 export const AboutMeCont = styled.div<containerProps>`
   color: #fff;
-  background: ${({ lightBack }) => (lightBack ? "#f9f9f9" : "#010606")};
+  background: ${({ lightBack }) => (lightBack ? "#f9f9f9" : "#111116")};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -52,7 +53,7 @@ export const TextWrapp = styled.div`
   padding: 0;
 `;
 
-type headingProps = {
+type headingProps = HTMLAttributes<HTMLHeadingElement> & {
   ligthText: any;
 };
 
@@ -61,13 +62,13 @@ export const Heading = styled.h2<headingProps>`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 700;
-  color: ${({ ligthText }) => (ligthText ? "#F54A1A" : "#010606")};
+  color: ${({ ligthText }) => (ligthText ? "#f5f0eb" : "#010606")};
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }
 `;
 
-type subtitleProps = {
+type subtitleProps = HTMLAttributes<HTMLParagraphElement> & {
   darkText: any;
 };
 
@@ -75,7 +76,7 @@ export const Subtitle = styled.p<subtitleProps>`
   max-width: 440px;
   font-size: 18px;
   line-height: 23px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  color: ${({ darkText }) => (darkText ? "#010606" : "#9a9490")};
 `;
 
 export const BtnWrap = styled.div`

@@ -1,11 +1,12 @@
 import Image from "next/future/image";
+import { HTMLAttributes } from "react";
 import styled from "styled-components";
 
-export const CardContainer = styled.div`
+export const CardContainer = styled.div<HTMLAttributes<HTMLDivElement>>`
   display: flex;
   flex-direction: column;
 `;
-export const CardTitle = styled.h2`
+export const CardTitle = styled.h2<HTMLAttributes<HTMLHeadingElement>>`
   font-size: 1.5rem;
   text-align: center;
   color: #fff;
@@ -21,7 +22,7 @@ export const ServiceIconWrapper = styled.div`
   width: 120px;
   display: flex;
   flex-direction: column;
-  background-color: #000;
+  background-color: #0a0a0d;
   border-radius: 6px;
   overflow: hidden;
 

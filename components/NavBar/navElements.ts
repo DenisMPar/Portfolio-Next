@@ -1,8 +1,9 @@
+import { HTMLAttributes } from "react";
 import styled from "styled-components";
 import { Link as LinkScroll } from "react-scroll";
 
-export const Nav = styled.nav`
-  background: #000;
+export const Nav = styled.nav<HTMLAttributes<HTMLElement>>`
+  background: #0a0a0d;
   height: 80px;
   margin-bottom: -80px;
   display: flex;
@@ -18,7 +19,7 @@ export const Nav = styled.nav`
   }
 `;
 
-export const NavBarContainer = styled.div`
+export const NavBarContainer = styled.div<HTMLAttributes<HTMLDivElement>>`
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -38,7 +39,7 @@ export const NavLogo = styled(LinkScroll)`
   font-weight: bold;
   text-decoration: none;
 `;
-export const MobileMenuIcon = styled.div`
+export const MobileMenuIcon = styled.div<HTMLAttributes<HTMLDivElement>>`
   display: none;
 
   @media screen and (max-width: 768px) {
@@ -52,7 +53,7 @@ export const MobileMenuIcon = styled.div`
     color: white;
   }
 `;
-export const NavMenu = styled.ul`
+export const NavMenu = styled.ul<HTMLAttributes<HTMLUListElement>>`
   display: flex;
   align-items: center;
   list-style: none;
@@ -63,7 +64,7 @@ export const NavMenu = styled.ul`
   }
 `;
 
-export const NavItem = styled.li`
+export const NavItem = styled.li<HTMLAttributes<HTMLLIElement>>`
   height: 80px;
 `;
 export const NavLinks = styled(LinkScroll)`
@@ -76,15 +77,15 @@ export const NavLinks = styled(LinkScroll)`
   cursor: pointer;
 
   &:hover {
-    color: #f54a1a;
+    color: #f5f0eb;
   }
 
   &:focus-visible {
-    outline: 2px solid #f54a1a;
+    outline: 2px solid #f5f0eb;
     outline-offset: -2px;
   }
 
   &.active {
-    border-bottom: 5px solid #f54a1a;
+    border-bottom: 5px solid #9a9490;
   }
 `;

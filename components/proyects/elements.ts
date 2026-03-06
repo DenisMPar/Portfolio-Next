@@ -1,6 +1,7 @@
+import { HTMLAttributes } from "react";
 import styled from "styled-components";
 
-export const ProyectsContainer = styled.div`
+export const ProyectsContainer = styled.div<HTMLAttributes<HTMLDivElement>>`
   min-height: 100vh;
   height: 100%;
   padding: 80px 60px 60px 60px;
@@ -8,7 +9,7 @@ export const ProyectsContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #1a1e21;
+  background-color: #17171d;
   gap: 48px;
   @media screen and (max-width: 769px) {
     padding: 80px 40px 40px 40px;
@@ -18,7 +19,7 @@ export const ProyectsContainer = styled.div`
   }
 `;
 
-export const ProyectsTitle = styled.h1`
+export const ProyectsTitle = styled.h1<HTMLAttributes<HTMLHeadingElement>>`
   margin-top: 20px;
   font-size: 48px;
   line-height: 1.1;
@@ -30,7 +31,7 @@ export const ProyectsTitle = styled.h1`
     display: block;
     width: 60px;
     height: 3px;
-    background: #f54a1a;
+    background: #9a9490;
     margin-top: 10px;
   }
 
@@ -39,7 +40,7 @@ export const ProyectsTitle = styled.h1`
   }
 `;
 
-export const ProyectWrapper = styled.div`
+export const ProyectWrapper = styled.div<HTMLAttributes<HTMLDivElement>>`
   width: 100%;
   max-width: 1100px;
   display: grid;
