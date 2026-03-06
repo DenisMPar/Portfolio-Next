@@ -3,7 +3,6 @@
 const withSvgr = require("next-svgr");
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: false,
 };
 
 module.exports = withSvgr({
